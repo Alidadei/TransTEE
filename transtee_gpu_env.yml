@@ -1,0 +1,78 @@
+# TransTEE Project - GPU Environment Configuration (Simplified)
+# Created: 2026-03-16
+
+name: transtee
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+
+dependencies:
+  # Python version
+  - python=3.10
+
+  # PyTorch with CUDA support (core only)
+  - pytorch=2.1.0
+  - torchvision=0.16.0
+  - pytorch-cuda=12.1
+
+  # Data science & ML
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+  - statsmodels
+
+  # Visualization
+  - matplotlib
+  - seaborn
+
+  # NLP / Transformers
+  - transformers
+  - tokenizers
+  - sentencepiece
+  - sacremoses
+
+  # Text processing
+  - nltk
+  - spacy>=3.0.0
+
+  # Development
+  - jupyter
+  - ipykernel
+  - tqdm
+  - pyyaml
+
+  # Graph processing
+  - networkx
+
+  # Utilities
+  - h5py
+  - pillow
+  - requests
+  - wandb
+
+  # Pip packages
+  - pip
+  - pip:
+      # PyTorch Geometric (for Structured)
+      - torch-geometric>=2.3.0
+      - torch-scatter>=2.1.0
+      - torch-sparse>=0.6.9
+
+      # TensorFlow (for CausalM compatibility)
+      - tensorflow>=2.13.0
+
+      # Additional NLP
+      - gensim
+      - captum
+
+      # Experiment tracking
+      - ray[tune]
+
+      # Utilities
+      - googledrivedownloader
+      - click
+
+prefix: B:/Experiments/TransTEE/envs/transtee

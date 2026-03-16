@@ -1,0 +1,33 @@
+3 channel Terms of Service accepted
+Channels:
+ - pytorch
+ - nvidia
+ - conda-forge
+ - defaults
+Platform: win-64
+Collecting package metadata (repodata.json): - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / - \ | / done
+Solving environment: \ | / - \ | / - \ | done
+
+
+==> WARNING: A newer version of conda exists. <==
+    current version: 25.11.1
+    latest version: 26.1.1
+
+Please update conda by running
+
+    $ conda update -n base -c defaults conda
+
+
+Installing pip dependencies: - \ | / - \ | / - \ | / - \ | / - \ | / - \ | Pip subprocess error:
+ERROR: Invalid requirement: 'torch-scatter>=2.1.0+fpu': Local version label can only be used with `==` or `!=` operators
+    torch-scatter>=2.1.0+fpu
+                 ~~~~~~~^ (from line 2 of B:\Experiments\TransTEE\condaenv.5cp4axaw.requirements.txt)
+
+Ran pip subprocess with arguments:
+['C:\\Users\\y\\miniconda3\\envs\\transtee\\python.exe', '-m', 'pip', 'install', '-U', '-r', 'B:\\Experiments\\TransTEE\\condaenv.5cp4axaw.requirements.txt', '--exists-action=b']
+Pip subprocess output:
+
+failed
+
+CondaEnvException: Pip failed
+
